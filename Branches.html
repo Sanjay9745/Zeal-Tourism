@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Zeal Tourism</title>
+  <meta name="description" content="Tourism is a leading destination management company in UAE. Find out the cheap hotels, flight tickets, travel insurance, sightseeing and tours" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png" />
+
+  <!-- ========================= CSS ========================= -->
+  <link rel="stylesheet" href="assets/Vendor/bootstrap-4.6.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/Vendor/fontawesome-free-6.2.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/Vendor/owl-carousel-2.3.4/owl.carousel.min.css" />
+    <!-- ========================= plugs css ========================= -->
+  <link rel="stylesheet" type="text/css" href="assets/Vendor/daterangepicker-master/daterangepicker.css" />
+  <link rel="stylesheet" href="assets/css/jquery-ui.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="assets/Vendor/sweetalert2/sweetalert2.min.css" type="text/css" />
+
+  <link rel="stylesheet" href="assets/css/custom.css" />
+
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-icon">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+ <!--End Preloader -->
+
+
+  <!-- header-area-->
+  <header class="header-area shadow bg-white">
+    <div class="col-xl-10 m-auto">
+        <div class="header-top separator">
+          <div class="row">
+            <a href="index.html" class="logo">
+              <img src="assets/img/logo.jpg" class="imgimg-fluid">
+           </a>
+              <div class="col-md-4 col-lg-4 col-xl-4 d-none d-lg-block">
+                  <div class="header-social-icon">
+                      <ul class="nav" >
+                          <li class="nav-item"><a href="https://www.facebook.com/zealtourism" target="_blank" class="nav-link"><img src="assets/img/Icons/FacebookLogo.png"></a></li>
+                          <li class="nav-item"><a href="https://www.instagram.com/zeal_tourism/" target="_blank" class="nav-link"><img src="assets/img/Icons/InstagramLogo.png"></a></li>
+                          <li class="nav-item"><a href="https://twitter.com/TravelsZeal" target="_blank" class="nav-link"><img src="assets/img/Icons/TwitterLogo.png"></a></li>
+                          <li class="nav-item"><a href="https://api.whatsapp.com/send/?phone=9710503621490&amp;text&amp;app_absent=0" target="_blank" class="nav-link"><img src="assets/img/Icons/WhatsappLogo.png"></a></li>
+                          <li class="nav-item"><a href="https://www.youtube.com/channel/UCK5XLzFhb6DNjngcvrZUeSw" target="_blank" class="nav-link"><img src="assets/img/Icons/YoutubeLogo.png"></a></li>
+                          <li class="nav-item"><a href="https://www.linkedin.com/in/zeal-tours-and-travels-394b88206/" target="_blank" class="nav-link"><img src="assets/img/Icons/LinkedinLogo.png"></a></li>
+                          <li class="nav-item"><a href="https://in.pinterest.com/zealtourism/_created/" target="_blank" class="nav-link"><img src="assets/img/Icons/PinterestLogo.png"></a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-md-6 col-lg-6 col-xl-6 col-9 ml-auto text-right pr-0 d-flex justify-content-end align-items-center">
+                 <ul class="right-contents nav justify-content-end">
+                   <li class="nav-item dropdown flagdrop">
+                      <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="flag-icon"><img src="assets/img/flag/united-arab-emirates.png"></span> AED  <i class="fa-solid fa-angle-down"></i></a>
+                      <div class="dropdown-menu" aria-labelledby="dropdown09"> 
+                          <a class="dropdown-item" href="#fr"><span class="flag-icon"><img src="assets/img/flag/USD.png"></span>  USD</a>   
+                          <a class="dropdown-item" href="#it"><span class="flag-icon"><img src="assets/img/flag/IND.png"></span>  INR</a>
+                      </div>
+                    </li>
+                   <li class="nav-item user-account d-none d-lg-block">
+                      <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="userpic" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="user-pic"><img src="assets/img/user-profiles.jpg"></span> Ronald Richards <i class="fa-solid fa-angle-down"></i></a>
+                      <div class="dropdown-menu" aria-labelledby="userpic">
+                          <a class="dropdown-item" href="Profile.html">My account</a>
+                          <a class="dropdown-item" href="Profile_bookings.html">My Bookings</a>
+                          <a class="dropdown-item" href="Profile_reward_points.html">Reward Points</a>
+                          <a class="dropdown-item" href="Profile_saved_items.html">Saved Items</a>
+                      </div>
+                   </li>
+                   <li class="nav-item">
+                      <a href="Cart.html" class="nav-link"><span class="add_cont">5</span> <i class="fal fa-cart-shopping fa-lg"></i></a>
+                   </li>
+                   <li class="nav-item whatsup-btn">
+                      <a href="javascript:void(0);" class="nav-link" id="waht-call" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="assets/img/Icons/WhtsaapCall.png"></a>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="waht-call">
+                        <a class="dropdown-item" href="tel:+9719876543210">+971 9876 543 210</a>
+                        <a class="dropdown-item" href="tel:+9719876543211">+971 9876 543 211</a>
+                    </div>
+                   </li>
+                   <li class="nav-item d-flex d-lg-none">
+                    <button class="navbar-toggler top-menu-button" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon">
+                       <i class="fa-solid fa-bars"></i>
+                        <img class="close-img d-none" src="assets/img/Icons/close.png">
+                      </span>
+                    </button>
+                   </li>
+                  </ul>
+              </div>
+          </div>
+        </div>
+        <div class="main-menu">
+          <nav class="navbar navbar-expand-lg fixed-top-onlymob">
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                      <ul class="navbar-nav ">
+                        <li class="d-block d-lg-none  user-account dropdown">
+                          <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="userpic" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="user-pic"><img src="assets/img/user-profiles.jpg"></span> Ronald Richards <i class="fa-solid fa-angle-down"></i></a>
+                          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="Profile.html">My account</a>
+                            <a class="dropdown-item" href="Profile_bookings.html">My Bookings</a>
+                            <a class="dropdown-item" href="Profile_reward_points.html">Reward Points</a>
+                            <a class="dropdown-item" href="Profile_saved_items.html">Saved Items</a>
+                          </div>
+                        </li>
+                        <li class="nav-item ">
+                          <a href="index.html" class="nav-link "> Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="Tours_grid.html" class="nav-link ">Delightful Tours</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="Holyday_grid_view.html" class="nav-link ">Exciting Holidays</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="Hotels_grid_view.html" class="nav-link ">Best Hotels</a>
+                </li>
+                <li class="nav-item">
+                  <a href="Customize_holidays.html" class="nav-link ">Customize Holidays</a>
+              </li>
+              <li class="nav-item">
+                <a href="Umrah_grid_view.html" class="nav-link">Umarah For All</a>
+            </li>
+            <li class="nav-item">
+              <a href="Transfers_grid_view.html" class="nav-link">Transfer</a>
+          </li>
+          <li class="nav-item">
+            <a href="Special_Deals.html" class="nav-link ">Special Deals</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false">Visa <i class="fa-solid fa-angle-down"></i></a>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="Visa.html">Global Visa Services</a>
+<a class="dropdown-item" href="Visa_Change-.html">Visa Change – UAE</a>
+<a class="dropdown-item" href="Visa_review.html">Check Visa Status</a>
+</div>
+      </li>
+      <li class="nav-item">
+        <a href="Traval_Insurance.html" class="nav-link">Insurance</a>
+    </li>
+    <li class="nav-item">
+      <a href="Forex.html" class="nav-link ">Forex</a>
+  </li>
+                       <!--pc only show-->
+                        <li class="nav-item dropdown d-none d-lg-flex">
+                          <a class="nav-link dropdown-toggle " href="javascript:void(0);" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-bars"></i>
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item " href="About_us.html">About Us</a>
+                            <a class="dropdown-item " href="contact_us.html">Contact Us</a>
+                            <a class="dropdown-item active" href="Branches.html">Branches</a>
+                            <a class="dropdown-item" href="blog.html">Blog</a>
+                            <a class="dropdown-item" href="Careers.html">Careers</a>
+                          </div>
+                        </li>
+                         <!--pc only show-->
+                      <!--mobile only show-->
+                      <li class="nav-item d-lg-none d-flex">
+                        <a href="About_us.html" class="nav-link ">About Us</a>
+                    </li>
+                    <li class="nav-item d-lg-none d-flex">
+                      <a href="contact_us.html" class="nav-link ">Contact Us</a>
+                  </li>
+                  <li class="nav-item d-lg-none d-flex">
+                    <a href="Branches.html" class="nav-link active">Branches</a>
+                </li>
+                <li class="nav-item d-lg-none d-flex">
+                  <a href="blog.html" class="nav-link">Blog</a>
+              </li>
+              <li class="nav-item d-lg-none d-flex">
+                <a href="Careers.html" class="nav-link">Careers</a>
+            </li>
+             <!--mobile only show-->
+
+                      </ul>
+                    </div>
+          </nav>
+    </div>
+    </div>
+  </header>
+  <!--header-area -->
+
+  <!--Page-area -->
+  <div class="Page-main mt-3 about-us-main">
+    <section class="mt-5 new-mod-custo mb-2">
+      <div class="container">
+           <div class="col-lg-12 p-0">
+            <h4>Our Branches</h4>
+           </div>
+            
+           <div class="bg-gery d-block mb-5">
+                  <div class="row">
+                      <div class="col-xl-6 col-md-6">
+                         <div class="card-body">
+                          <div class="form-group">
+                            <h4 class="flag-title-withimg them-color"><img src="assets/img/flag/united-arab-emirates.png">United Arab Emirates</h4>
+                           </div>
+                           <!-- <div class="form-group">
+                                 <select class="form-control">
+                                   <option>Dubai</option>
+                                   <option>Sharjah</option>
+                                   <option>Fujairah</option>
+                                   <option>Abu Dhabi</option>
+                                 </select>
+                           </div> -->
+                           <div class="form-group pt-2">
+                            <address>
+                             <div class="d-block mb-2">
+                              Al Safiya Building, Opp Abu Hail Metro Station, <br> Near NMC Medical Center 31st St - Abu Hail
+                             </div>
+                              <div class="d-block mb-2">
+                              <strong>Time</strong><br>
+                              09 Am to 10 Pm
+                             </div>
+                             <div class="d-block mb-2">
+                              <strong>Phone</strong><br>
+                              +971 4 26 35 660 | Mob: +971 50 3621 490 
+                             </div>
+                             <div class="d-block mb-2">
+                               <strong>Email</strong><br>
+                               info@zealtourism.com
+                             </div>
+                              </address>
+                           </div>
+                         </div>
+                      </div>
+                      <div class="col-xl-6 col-md-6">
+                           <div class="branch-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14431.330472560438!2d55.3454475!3d25.2762155!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43fafb3f2733%3A0x8a596f8b5e70ff72!2sZeal%20Tours%20and%20Travels!5e0!3m2!1sen!2sae!4v1701528839806!5m2!1sen!2sae" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                           </div>
+                      </div>
+                  </div>
+           </div>
+
+           <div class="bg-gery d-block mb-5">
+            <div class="row">
+                <div class="col-xl-6 col-md-6">
+                   <div class="card-body">
+                    <div class="form-group">
+                      <h4 class="flag-title-withimg them-color"><img src="assets/img/flag/IND.png">India</h4>
+                     </div>
+                     <!-- <div class="form-group">
+                           <select class="form-control">
+                             <option>Thiruvananthapuram</option>
+                             <option>Malappuram</option>
+                             <option>Alappuzha</option>
+                             <option>Calicut</option>
+                           </select>
+                     </div> -->
+                     <div class="form-group pt-2">
+                      <address>
+                       <div class="d-block mb-2">
+                        Chattanchal - Melparamba Rd, Melparamba, Chemnad, <br> Kerala 671317, India
+                       </div>
+                       <div class="d-block mb-2">
+                        <strong>Time</strong><br>
+                        09 Am to 10 Pm
+                       </div>
+                       <div class="d-block mb-2">
+                        <strong>Phone</strong><br>
+                        +971 4 26 35 660 | Mob: +971 50 3621 490 
+                       </div>
+                       <div class="d-block mb-2">
+                         <strong>Email</strong><br>
+                         info@zealtourism.com
+                       </div>
+                        </address>
+                     </div>
+                   </div>
+                </div>
+                <div class="col-xl-6 col-md-6">
+                     <div class="branch-map">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15582.812574943355!2d75.0091749!3d12.4694795!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba48372efbef0fb%3A0xad400ac9b7d7202b!2sZeal%20Holidays%20Pvt.%20Ltd!5e0!3m2!1sen!2sae!4v1701529002554!5m2!1sen!2sae" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                     </div>
+                </div>
+            </div>
+     </div>
+      </div>
+    </section>
+
+
+  </div>
+  <!--Page-area -->
+
+   <!--Footer area-->
+   <footer class="footer">
+    <div class="container">
+          <div class="row">
+            <div class="col-xl-3 py-md-4 pt-4">
+                 <div class="company-info">
+                     <img src="assets/img/logo_wihte.png">
+                     <p>One-stop travel answer for making remarkable special plans and exercises in a problem free way.</p>
+                 </div>
+                 <div class="row">
+                  <div class="col-sm-12">
+                    <div class="subscribe_now">
+                      <h4>We’ll keep you up to date</h4>
+                      <form class="subscribe_form">
+                        <div class="input-group">
+                           <input type="text" class="form-control" name="email" placeholder="Enter your email id to subscribe">
+                           <span class="input-group-btn">
+                                <button class="btn btn-default" type="button"><img src="assets/img/Icons/ArrowRight.png"></button>
+                           </span>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="social_main">
+                    <h6>Follow Us</h6>
+  <div class="social-links">
+  <a href="https://www.facebook.com/zealtourism" id="share-fb"  target="_blank" class="sharer button"><i class="fa-brands fa-facebook"></i></a>
+  <a href="https://twitter.com/TravelsZeal" id="share-tw"  target="_blank" class="sharer button"><i class="fa-brands fa-twitter"></i></a>
+  <a href="https://www.instagram.com/zeal_tourism/" id="share-li"  target="_blank" class="sharer button"><i class="fa-brands fa-instagram"></i></a>
+  <a href="https://www.linkedin.com/in/zeal-tours-and-travels-394b88206/" id="share-gp"  target="_blank" class="sharer button"><i class="fa-brands fa-linkedin"></i></a>
+  <a href="https://www.youtube.com/channel/UCK5XLzFhb6DNjngcvrZUeSw" id="share-em" target="_blank"  class="sharer button"><i class="fa-brands fa-youtube"></i></a>
+  <a href="https://in.pinterest.com/zealtourism/_created/" id="share-em" target="_blank" class="sharer button"><i class="fa-brands fa-pinterest"></i></a>
+  </div>
+  </div>
+                  </div>
+                </div>
+  
+                <div class="row d-none d-md-flex">
+                  <div class="col-3 InfoIATA">
+                      <img src="assets/img/Icons/IATA.png">
+                  </div>
+                  <div class="col-9 InfoTripadvisor">
+                    <img src="assets/img/Icons/Tripadvisor.png">
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-9 py-md-4 pb-4 Quick-links-main">
+                  <hr class="d-md-none">
+                  <div class="row">
+                       <div class="col-sm-3 col-5">
+                          <ul class="nav flex-column">
+                          <li class="nav-item">
+                            <span class="footer-title">Our Services</span>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="Hotels_grid_view.html">Hotels</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="Tours_grid.html">Tours</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="Holyday_grid_view.html">Holidays</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="Customize_holidays.html">Customize Holidays</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="Umrah_grid_view.html">Umrah Trip</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="Special_Deals.html">Special Deals</a>
+                          </li>
+                          </ul>
+                       </div>
+                       <div class="col-sm-3 col-7">
+                        <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <span class="footer-title">Company</span>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="About_us.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="contact_us.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="Branches.html">Branches</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="blog_details.html">News</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="Careers.html">Careers</a>
+                        </li>
+                        </ul>
+                     </div>
+                     <div class="col-sm-3 col-5">
+                      <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <span class="footer-title">Info</span>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="CancellationPolicy.html">Cancellation Policy</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="TermsAndconditions.html">Terms & Conditions</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="PrivacyPolicy.html">Privacy Policy</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="CookiePolicy.html">Cookie Policy</a>
+                      </li>
+                      </ul>
+                   </div>
+                   <div class="col-sm-3 col-7">
+                    <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <span class="footer-title">Contact Us</span>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="mailto:info@zealtourism.com">Email: info@zealtourism.com</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="tel:+9719876543210">Phone: +971 9876 543 210</a>
+                    </li>
+                    </ul>
+                 </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                       <ul class="nav flex-column">
+                       <li class="nav-item">
+                         <span class="footer-title">Quick Links</span>
+                       </li>
+                       <li class="nav-item">
+                         <a class="nav-link" href="javascript:void(0);">Lorem Ornare</a>
+                       </li>
+                       <li class="nav-item">
+                         <a class="nav-link" href="javascript:void(0);">Quam</a>
+                       </li>
+                       <li class="nav-item">
+                         <a class="nav-link" href="javascript:void(0);">Malesuada Ipsum</a>
+                       </li>
+                       <li class="nav-item">
+                         <a class="nav-link" href="javascript:void(0);">Parturient Venenatis Etiam</a>
+                       </li>
+                       <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);">Vestibulum</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);">Fermentum Venenatis Tortor</a>
+                      </li>
+                       </ul>
+                    </div>
+                    <div class="col-sm-3">
+                     <ul class="nav flex-column">
+                     <li class="nav-item">
+                       <span class="footer-title hidden d-md-block d-none">s</span>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link" href="javascript:void(0);">Ullamcorper</a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link" href="javascript:void(0);">Ullamcorper</a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link" href="javascript:void(0);">Venenatis Mollis</a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link" href="javascript:void(0);">Fringilla Nullam</a>
+                     </li>
+                     <li class="nav-item">
+                      <a class="nav-link" href="javascript:void(0);">Lorem Ornare</a>
+                    </li>
+                     </ul>
+                  </div>
+                  <div class="col-sm-3">
+                   <ul class="nav flex-column">
+                   <li class="nav-item">
+                     <span class="footer-title hidden d-md-block d-none">s</span>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="javascript:void(0);">Magna Malesuada</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="javascript:void(0);">Parturient Lorem</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="javascript:void(0);">Parturient Malesuada Sem</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="javascript:void(0);">Ridiculus</a>
+                   </li>
+                   <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0);">Fringilla Fusce Elit</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0);">Parturient Malesuada Sem</a>
+                  </li>
+                   </ul>
+                </div>
+                <div class="col-sm-3">
+                 <ul class="nav flex-column">
+                 <li class="nav-item">
+                   <span class="footer-title hidden d-md-block d-none">s</span>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="javascript:void(0);">Fringilla Fusce Elit</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="javascript:void(0);">Inceptos</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="javascript:void(0);">Malesuada Fermentum Tortor</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="javascript:void(0);">Bibendum</a>
+                 </li>
+                 <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0);">Fringilla Fusce Elit</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0);">Magna Malesuada</a>
+                </li>
+                 </ul>
+              </div>
+               </div>
+  
+               <div class="row d-md-none py-3">
+                <div class="col-3 offset-2 InfoIATA">
+                   <a href="javascript:void(0);"><img src="assets/img/Icons/IATA.png"></a> 
+                </div>
+                <div class="col-5 InfoTripadvisor">
+                  <a href="javascript:void(0);"><img src="assets/img/Icons/Tripadvisor.png"></a> 
+                </div>
+              </div>
+  
+            </div>
+          </div>
+    </div>
+    <div class="footer-bootom text-center">
+      <span>Copyright @ 2023 Zeal Tourism</span>
+  </div>
+  </footer>
+   <!--Footer area-->
+    <!-- ========================= scroll-top ========================= -->
+    <a href="javascript:void(0);" class="scroll-top">
+      <i class="fa-solid fa-arrow-up"></i>
+     </a>
+  
+   <!-- ========================= JS here ========================= -->
+   <script src="assets/js/jquery-3.6.2.min.js"></script>
+   <script src="assets/Vendor/bootstrap-4.6.2/js/bootstrap.bundle.min.js"></script>
+   <!--<script src="assets/Vendor/bootstrap-4.6.2/js/bootstrap.min.js"></script>-->
+   <script src="assets/Vendor/owl-carousel-2.3.4/owl.carousel.min.js"></script>
+  
+   <!-- ========================= plugs js ========================= -->
+   <script type="text/javascript" src="assets/Vendor/daterangepicker-master/moment.min.js"></script>
+   <script type="text/javascript" src="assets/Vendor/daterangepicker-master/daterangepicker.js"></script>
+   <script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+   <script type="text/javascript" src="assets/js/dayjs.min.js"></script>
+   <script type="text/javascript" src='assets/js/timepicker-bs4.js'></script>
+   <script type="text/javascript" src='assets/Vendor/sweetalert2/sweetalert2.all.min.js'></script>
+   <!-- ========================= Custom JS ========================= -->
+   <script src="assets/js/main.js"></script>
+</body>
+
+</html>
