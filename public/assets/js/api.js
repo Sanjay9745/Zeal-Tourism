@@ -1,6 +1,6 @@
 const APIQuery = {
-    baseUrl: 'http://localhost:3002/api',
-    cdnUrl: 'http://localhost:3002/',
+    baseUrl: 'http://localhost:3000/api',
+    cdnUrl: 'http://localhost:3000/uploads/',
     get: async (url) => {
         const response = await fetch(url);
         return response.json();
