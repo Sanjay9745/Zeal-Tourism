@@ -10,7 +10,7 @@ async function getHolidays() {
             holidays.forEach(holiday => {
                 $('#HolidayHero').append(`
                     <div class="item">
-                        <a href="Holiday_Details.html">
+                        <a href="/holidays?holiday=${holiday?.slug}">
                             <div class="card imag-zoom height-auto">
                                 <img src="${APIQuery.cdnUrl}${holiday.thumbnail}" class="card-img-top img-zoom-object dummy_img" alt="ZealTourism_img">
                                 <img src="${APIQuery.cdnUrl}${holiday.thumbnail}" class="card-img-top img-zoom-object" alt="ZealTourism_img">
