@@ -33,10 +33,10 @@ async function getHolidays() {
                                     </div>
                                     <div class="days clearfix">
                                         <span><i class="fa-regular fa-clock"></i> <strong>${holiday?.details?.duration}</strong></span>
-                                        <span><strong>${holiday?.details?.highlights?.length}</strong> Cities</span> 
+                                        <span><strong>${holiday?.details?.attracts?.length}</strong> Cities</span> 
                                     </div>
                                     <div class="accommodation clearfix">
-                                    ${holiday?.details?.highlights?.map((highlight, index) => `<span><i class="fas fa-check"></i> ${highlight}</span> `).join('')}
+                                    ${holiday?.details?.attracts?.map((highlight, index) => `<span><i class="fas fa-check"></i> ${highlight}</span> `).join('')}
                                     </div>
                                     <div class="adults clearfix">
                                     ${holiday?.details?.tags?.map((tag, index) => `<span><i class="fas fa-check"></i> ${tag}</span> `).join('')}
@@ -85,6 +85,7 @@ async function getHolidays() {
 }
 
 function generateStars(rating) {
+    rating = Number(rating);
     let stars = '';
     for (let i = 0; i < 5; i++) {
         if (i < rating) {

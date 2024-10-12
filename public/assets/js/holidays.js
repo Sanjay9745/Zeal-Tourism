@@ -23,6 +23,7 @@ async function getHoliday() {
 }
 
 function generateStars(rating) {
+    rating = Number(rating);
     let stars = '';
     for (let i = 0; i < 5; i++) {
         if (i < rating) {
