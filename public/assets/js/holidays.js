@@ -55,7 +55,7 @@ function renderHolidayHero(holiday) {
                     </div>
                     <div class="col-md-6 text-right">
                         <div class="d-block mb-1 pt-3">
-                            <a href="${holiday?.pdf?.[0]?.link}" class="btn btn-theam-outer-line fs-12 mr-2" id="download_pdf_btn" download>Download PDF</a>
+                            <a href="${APIQuery?.cdnUrl +holiday?.pdf?.[0]?.link}" class="btn btn-theam-outer-line fs-12 mr-2" id="download_pdf_btn" download>Download PDF</a>
                             <a href="JavaScript:void(0);" class="bookmark normelbookmark mr-2 social-link" id=""><i class="fa-light fa-share-nodes"></i></a>
                             <span class="bookmark normelbookmark" id="saveforitem"><i class="far fa-bookmark"></i></span>
                         </div>
