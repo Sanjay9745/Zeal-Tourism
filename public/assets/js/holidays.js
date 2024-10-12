@@ -383,6 +383,9 @@ function renderBookingPolicy(holiday) {
             </div>
         </div>
     ` : '';
+    if(!holiday?.bookingPolicy?.cancellation){
+        cancellationPolicyHtml = ``;
+    }
 
     let childPolicyHtml = holiday?.bookingPolicy?.childPolicy ? `
         <div class="panel panel-default">
@@ -401,6 +404,9 @@ function renderBookingPolicy(holiday) {
             </div>
         </div>
     ` : '';
+    if(!holiday?.bookingPolicy?.childPolicy){
+        childPolicyHtml = ``;
+    }
 
     let otherPoliciesHtml = holiday?.bookingPolicy?.otherPolicies?.map((policy, index) => `
         <div class="panel panel-default">
@@ -408,7 +414,7 @@ function renderBookingPolicy(holiday) {
                 <h4 class="panel-title">
                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse${index + 3}"
                       aria-expanded="false" aria-controls="collapse${index + 3}">
-                        ${policy.title}
+                        
                     </a>
                 </h4>
             </div>
@@ -419,6 +425,9 @@ function renderBookingPolicy(holiday) {
             </div>
         </div>
     `).join('') || '';
+    if(!holiday?.bookingPolicy?.otherPolicies.length){
+        otherPoliciesHtml = ``
+    }
 
     let html = '';
 
