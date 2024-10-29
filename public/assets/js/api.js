@@ -1,6 +1,6 @@
 const APIQuery = {
-    baseUrl: 'https://zeal-backend-uqmg.onrender.com/api',
-    cdnUrl: 'https://zeal-backend-uqmg.onrender.com/uploads/',
+    baseUrl: 'http://localhost:3002/api',
+    cdnUrl: 'http://localhost:3002/uploads/',
     get: async (url) => {
         const response = await fetch(url);
         return response.json();
