@@ -4,8 +4,12 @@ const slug = urlParams.get('holiday');
 async function getHoliday() {
     try {
         const response = await APIQuery.get(`${APIQuery.baseUrl}/holidays/slug/${slug}`);
+        console.log(response,"farrr");
+        
         if (response.success) {
             let holiday = response.results;
+            console.log(holiday,"JJJ");
+            
             renderHolidayHero(holiday);
             renderOverview(holiday);
             renderItinerary(holiday);
@@ -68,30 +72,31 @@ function renderHolidayHero(holiday) {
                     </div>
                 </div>
             </div>
-            <div class="slider-main mb-5">
-                <div id="carouselExampleIndicators" class="carousel slide rounded" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        ${holiday?.images?.map((_, index) => `
-                            <li data-target="#carouselExampleIndicators" data-slide-to="${index}" class="${index === 0 ? 'active' : ''}"></li>
-                        `).join('')}
-                    </ol>
-                    <div class="carousel-inner">
-                        ${holiday?.images?.map((image, index) => `
-                            <div class="carousel-item ${index === 0 ? 'active' : ''}">
-                                <img class="d-block w-100" src="${APIQuery?.cdnUrl + image}" alt="Slide ${index + 1}">
-                            </div>
-                        `).join('')}
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+         <div class="slider-main mb-5">
+    <div id="carouselExampleIndicators" class="carousel slide rounded" data-ride="carousel">
+        <ol class="carousel-indicators">
+            ${holiday?.images?.map((_, index) => `
+                <li data-target="#carouselExampleIndicators" data-slide-to="${index}" class="${index === 0 ? 'active' : ''}"></li>
+            `).join('')}
+        </ol>
+        <div class="carousel-inner">
+           { ${holiday.images.map((image, index) => `
+                <div class="carousel-item ${index === 0 ? 'active' : ''}">
+                    <img class="d-block w-100 carousel-img" src="${image}" alt="Slide ${index + 1}">
                 </div>
-            </div>
+            `).join('')}}
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
             <div class="card-header rounded mb-5 border-0 pl-0 pr-0">
                 <ul class="nav">
                 ${

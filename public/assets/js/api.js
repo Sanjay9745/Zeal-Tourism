@@ -1,4 +1,4 @@
-const APIQuery = {
+const  APIQuery = {
     baseUrl: 'http://localhost:3002/api',
     cdnUrl: 'http://localhost:3002/uploads/',
     get: async (url) => {

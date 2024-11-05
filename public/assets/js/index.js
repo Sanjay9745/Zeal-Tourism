@@ -3,8 +3,10 @@ async function getHolidays() {
         const response = await APIQuery.get(`${APIQuery.baseUrl}/holidays`);
 
         if (response.success) {
-            console.log(response.results);
+            console.log(response.results,"gggg");
             let holidays = response.results;
+            console.log(holidays,"farr");
+            
 
             $('#HolidayHero').html('');
             holidays.forEach(holiday => {
@@ -12,8 +14,8 @@ async function getHolidays() {
                     <div class="item">
                         <a href="/holidays?holiday=${holiday?.slug}">
                             <div class="card imag-zoom height-auto">
-                                <img src="${APIQuery.cdnUrl}${holiday.thumbnail}" class="card-img-top img-zoom-object dummy_img" alt="ZealTourism_img">
-                                <img src="${APIQuery.cdnUrl}${holiday.thumbnail}" class="card-img-top img-zoom-object" alt="ZealTourism_img">
+                                <img src="${holiday.thumbnail}" class="card-img-top img-zoom-object dummy_img" alt="ZealTourism_img">
+                                <img src="${holiday.thumbnail}" class="card-img-top img-zoom-object" alt="ZealTourism_img">
                                 <div class="card-body">
                                     <span class="bookmark" id="saveforitem"><i class="far fa-bookmark"></i></span>
                                     <h6 class="card-title">${holiday.title}</h6>

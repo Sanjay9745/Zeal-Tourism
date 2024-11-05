@@ -18,8 +18,8 @@ app.get('/holidays', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'holidays.html'));
 });
 
-app.get('/visas', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'global.html'));
+app.get('/global-visa', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'Visa_Details.html'));
 });
 // Start the server
 app.listen(PORT, () => {
