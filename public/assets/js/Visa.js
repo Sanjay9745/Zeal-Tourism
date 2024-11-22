@@ -1,6 +1,6 @@
 async function getGlobalVisasMul() {
     try {
-        const response = await fetch('https://api.zealtourism.com/api/global-visa');
+        const response = await fetch('http://localhost:3002/api/global-visa');
         const data = await response.json(); // Parse the JSON data
         console.log(data, "GlobalVis");
 

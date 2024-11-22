@@ -21,6 +21,12 @@ app.get('/holidays', (req, res) => {
 app.get('/global-visa', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'Visa_Details.html'));
 });
+
+
+app.get('/umrahaall', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'Umrah_package_details.html'));
+});
+
 // Start the server
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);

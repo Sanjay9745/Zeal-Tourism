@@ -1,6 +1,6 @@
 const  APIQuery = {
-    baseUrl: 'https://api.zealtourism.com/api',
-    cdnUrl: 'https://api.zealtourism.com/uploads/',
+    baseUrl: 'http://localhost:3002/api',
+    cdnUrl: 'http://localhost:3002/uploads/',
     get: async (url) => {
         const response = await fetch(url);
         return response.json();

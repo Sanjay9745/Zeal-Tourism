@@ -1,7 +1,7 @@
 async function getGlobalVisas() {
     try {
         const response = await APIQuery.get(`${APIQuery.baseUrl}/global-visa`);
-        console.log(response, "GlobalVis");
+       
 
         if (response.success) {
             const globalVisas = response.results;
@@ -38,15 +38,29 @@ async function getGlobalVisas() {
             $('#VisaHero').owlCarousel('destroy');
 
             // Initialize the carousel after content is added
-            $('#VisaHero').owlCarousel({
-                loop: true,
-                margin: 10,
+            var owl = $('#VisaHero').owlCarousel({
+                loop: false,
+                margin: 0,
+                dots: false,
+                smartSpeed: 700,
+                animateIn: 'slideInRight',
+                animateOut: 'slideOutRight',
                 nav: true,
-                items: 2,
+                navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
                 responsive: {
-                    0: { items: 1 },
-                    600: { items: 2 },
-                    1000: { items: 4 }
+                    0: {
+                        items: 1,
+                        nav: false,
+                    },
+                    768: {
+                        items: 2
+                    },
+                    992: {
+                        items: 3
+                    },
+                    1200: {
+                        items: 3
+                    }
                 }
             });
         } else {

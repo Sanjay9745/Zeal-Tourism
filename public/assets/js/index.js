@@ -3,9 +3,9 @@ async function getHolidays() {
         const response = await APIQuery.get(`${APIQuery.baseUrl}/holidays`);
 
         if (response.success) {
-            console.log(response.results,"gggg");
+          
             let holidays = response.results;
-            console.log(holidays,"farr");
+         
             
 
             $('#HolidayHero').html('');
