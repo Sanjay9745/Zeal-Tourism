@@ -4,7 +4,7 @@ console.log(slug);
 
 async function getUmrhaDetails() {
   try {
-    const response = await fetch(`http://localhost:3002/api/umrahaall/slug/${slug}`); // Use backend URL
+    const response = await fetch(`https://api.zealtourism.com/slug/${slug}`); // Use backend URL
     const data = await response.json();
 
     if (data && data.success) {
