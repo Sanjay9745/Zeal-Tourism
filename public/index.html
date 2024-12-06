@@ -642,21 +642,29 @@
                     <div class="search-button row-box"><a href="javascript:void(0);" type="button" class="btn"><i class="fas fa-magnifying-glass"></i></a></div>
                    </div>
                 </div>
-              <div id="Visa" class="tab-pane">
+
+
+          <div id="Visa" class="tab-pane">
                 <div class="d-flex">
                   <div class="col row-box">
                     <div class="body_Clickable">
-                      <div class="book-icon"><img src="assets/img/Icons/Loction_dots.png"></div>
+                      <div class="book-icon "><img src="assets/img/Icons/Loction_dots.png"></div>
                       <div class="book-deti">
-                        <a href="javascript:void(0);" class="main-a" id="">Destination or Tour</a>
+                        <a href="javascript:void(0);" class="main-a">From</a>
                         <div class="input-wrrap">
-                          <input  data-toggle="dropdown" class="select-item"   id="Destination" value="Dubai" readonly>
-                          <div class="dropdown-menu top-menu  Nationality-flg select-menu" aria-labelledby="Destination">
-                            <div class="dropdown-item" ><span class="flag-icon"><i class="fal fa-map-marker-alt"></i></span> Abu Dhabi</div>
-                            <div class="dropdown-item" ><span class="flag-icon"><i class="fal fa-map-marker-alt"></i></span> Dubai</div>
-                            <div class="dropdown-item" ><span class="flag-icon"><i class="fal fa-map-marker-alt"></i></span> Sharjah</div>
-                            <div class="dropdown-item" ><span class="flag-icon"><i class="fal fa-map-marker-alt"></i></span> Ajman</div>
-                            <div class="dropdown-item" ><span class="flag-icon"><i class="fal fa-map-marker-alt"></i></span> Umm Al-Quwain</div>
+                          <input data-toggle="dropdown" class="select-item " id="From" value="Dubai" readonly>
+                          <div class="dropdown-menu top-menu  Nationality-flg select-menu"
+                            aria-labelledby="From">
+                            <div class="dropdown-item"><span class="flag-icon"><i
+                                  class="fal fa-map-marker-alt"></i></span> Abu Dhabi</div>
+                            <div class="dropdown-item"><span class="flag-icon"><i
+                                  class="fal fa-map-marker-alt"></i></span> Dubai</div>
+                            <div class="dropdown-item"><span class="flag-icon"><i
+                                  class="fal fa-map-marker-alt"></i></span> Sharjah</div>
+                            <div class="dropdown-item"><span class="flag-icon"><i
+                                  class="fal fa-map-marker-alt"></i></span> Ajman</div>
+                            <div class="dropdown-item"><span class="flag-icon"><i
+                                  class="fal fa-map-marker-alt"></i></span> Umm Al-Quwain</div>
                           </div>
                         </div>
                       </div>
@@ -665,58 +673,64 @@
                   <div class="row-box-divider"></div>
                   <div class="col row-box">
                     <div class="body_Clickable">
-                    <div class="book-icon ml-2"><img src="assets/img/Icons/HouseLine.png"></div>
-                    <div class="book-deti">
-                      <a href="javascript:void(0);" class="main-a" id="" >Living</a>
-                       <div class="input-wrrap">
-                        <input data-toggle="dropdown"  class="select-item "  id="Destination" value="Dubai" readonly>
-                        <div class="dropdown-menu top-menu  Nationality-flg select-menu" aria-labelledby="Destination">
-                          <div class="dropdown-item" ><span class="flag-icon"><i class="fal fa-home-lg-alt"></i></span> Abu Dhabi</div>
-                          <div class="dropdown-item" ><span class="flag-icon"><i class="fal fa-home-lg-alt"></i></span> Dubai</div>
-                          <div class="dropdown-item" ><span class="flag-icon"><i class="fal fa-home-lg-alt"></i></span> Sharjah</div>
-                          <div class="dropdown-item" ><span class="flag-icon"><i class="fal fa-home-lg-alt"></i></span> Ajman</div>
-                          <div class="dropdown-item" ><span class="flag-icon"><i class="fal fa-home-lg-alt"></i></span> Umm Al-Quwain</div>
-                       </div>
+                      <div class="book-icon ml-2"><img src="assets/img/Icons/HouseLine.png"></div>
+                      <div class="book-deti">
+                        <a href="javascript:void(0);" class="main-a" id="">Living</a>
+                        <div class="input-wrrap">
+                          <select class="select-item" id="Living">
+                            <option value="Abu Dhabi">Abu Dhabi</option>
+                            <option value="Dubai">Dubai</option>
+                            <option value="Sharjah">Sharjah</option>
+                            <option value="Ajman">Ajman</option>
+                            <option value="Umm Al-Quwain">Umm Al-Quwain</option>
+                          </select>
+                        </div>
                       </div>
                     </div>
                   </div>
-                 </div>
-                 <div class="row-box-divider"></div>
+                  <div class="row-box-divider"></div>
+                
                   <div class="col row-box pl-3 pr-3">
                     <div class="body_Clickable datpickermop">
-                    <div class="book-icon"><img src="assets/img/Icons/Calendar.png"></div>
-                    <div class="book-deti">
-                      <a href="javascript:void(0);" class="main-a">Date</a>
-                      <!--<h5>18 Dec</h5>-->
-                      <div class="input-wrrap">
-                        <input  class="datepicker-mockup"  id="" name="datepicker" value="18 Dec" readonly>
+                      <div class="book-icon"><img src="assets/img/Icons/Calendar.png"></div>
+                      <div class="book-deti">
+                        <a href="javascript:void(0);" class="main-a">Date</a>
+                        <div class="input-wrrap">
+                          <input class="datepicker-mockup" id="Date" name="datepicker" value="18 Dec" readonly>
+                        </div>
                       </div>
-                   </div> 
-                  </div>
+                    </div>
                   </div>
                   <div class="row-box-divider"></div>
+                
                   <div class="col row-box">
                     <div class="body_Clickable">
-                    <div class="book-icon ml-5"><img src="assets/img/Icons/Globel.png"></div>
-                    <div class="book-deti">
-                      <a href="javascript:void(0);" class="main-a" id="">Nationality</a>
-                     <!-- <h5>Emirati</h5>-->
-                     <div class="input-wrrap">
-                       <input data-toggle="dropdown" class="select-item"  id="Destination" value="Emirati" readonly>
-                       <div class="dropdown-menu top-menu  Nationality-flg select-menu" aria-labelledby="Nationality">
-                         <div class="dropdown-item" ><span class="flag-icon"><i class="fal fa-globe-asia"></i></span> Emirati</div>
-                         <div class="dropdown-item" ><span class="flag-icon"><i class="fal fa-globe-asia"></i></span> USA</div>
-                         <div class="dropdown-item" ><span class="flag-icon"><i class="fal fa-globe-asia"></i></span> India</div>
-                         <div class="dropdown-item" ><span class="flag-icon"><i class="fal fa-globe-asia"></i></span> Africa</div>
-                         <div class="dropdown-item" ><span class="flag-icon"><i class="fal fa-globe-asia"></i></span> Afghan</div>
+                      <div class="book-icon ml-5"><img src="assets/img/Icons/Globel.png"></div>
+                      <div class="book-deti">
+                        <a href="javascript:void(0);" class="main-a" id="">Nationality</a>
+                        <div class="input-wrrap">
+                          <select class="select-item" id="Nationality">
+                            <option value="Emirati">Emirati</option>
+                            <option value="USA">USA</option>
+                            <option value="India">India</option>
+                            <option value="Africa">Africa</option>
+                            <option value="Afghan">Afghan</option>
+                          </select>
+                        </div>
                       </div>
-                     </div>
-                   </div> 
+                    </div>
                   </div>
+                
+                  <div class="search-button row-box">
+                    <a href="javascript:void(0);" type="button" class="btn" id="SearchButton">
+                      <i class="fas fa-magnifying-glass"></i>
+                    </a>
                   </div>
-                  <div class="search-button row-box"><a href="javascript:void(0);" type="button" class="btn"><i class="fas fa-magnifying-glass"></i></a></div>
-                 </div>
+                </div>
+                
             </div>
+
+
             <div id="Umrah_Trip" class="tab-pane">
               <div class="d-flex">
                 <div class="col row-box">
